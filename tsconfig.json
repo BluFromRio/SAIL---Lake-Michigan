@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "none",
+    "outFile": "main.js",
+    "strict": true
+  },
+  "include": ["main.ts"]
+}
