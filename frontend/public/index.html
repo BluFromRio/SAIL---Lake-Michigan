@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1f2937" />
+    <meta name="description" content="PermitCheck AI - AI-Powered Feasibility and Permit Review Assistant for Contractors and Cities" />
+    <meta name="keywords" content="permit, construction, AI, feasibility, building codes, zoning, contractors" />
+    <meta name="author" content="PermitCheck AI" />
+    
+    <meta property="og:title" content="PermitCheck AI" />
+    <meta property="og:description" content="AI-Powered Feasibility and Permit Review Assistant" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://permitcheck.ai" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <title>PermitCheck AI - Smart Permit Processing</title>
+  </head>
+  <body>
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>🏗️ PermitCheck AI</h1>
+        <p>You need to enable JavaScript to run this application.</p>
+        <p>PermitCheck AI requires JavaScript to provide AI-powered permit analysis and review services.</p>
+      </div>
+    </noscript>
+    
+    <div id="root"></div>
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('SW registered: ', registration);
+            })
+            .catch(function(registrationError) {
+              console.log('SW registration failed: ', registrationError);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
